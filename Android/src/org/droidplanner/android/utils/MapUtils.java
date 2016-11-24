@@ -105,7 +105,8 @@ public class MapUtils {
 	}
 
 	public static com.baidu.mapapi.model.LatLng coordToBaiduLatLng(LatLong coord) {
-        return new com.baidu.mapapi.model.LatLng(coord.getLatitude(), coord.getLongitude());
+        double[] latLon=CoordConverterUtils.wgs2bd(coord.getLatitude(),coord.getLongitude());
+        return new com.baidu.mapapi.model.LatLng(latLon[0], latLon[1]);
     }
 
 	public static LatLong baiduLatLngToCoord(com.baidu.mapapi.model.LatLng point) {

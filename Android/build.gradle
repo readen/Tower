@@ -189,7 +189,7 @@ android {
         beta {
             applicationIdSuffix ".beta"
             resValue "string", "app_title", "Tower Beta"
-            resValue "string", "baidu_api_key", "4x7A3lUHEmzFxosafDa4bLP7yinmEnPh"
+            resValue "string", "baidu_api_key", "n2XGGgn96p0fZe7Zm4pVSClMDpDkgiDY"
             versionName generateVersionName(versionPrefix, versionMajor, versionMinor, versionPatch, "beta.${versionBuild}")
 
             //Enable or disable crashlytics based on the availability of the api key
